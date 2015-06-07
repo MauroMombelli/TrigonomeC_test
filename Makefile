@@ -12,6 +12,8 @@ LIBS=-lm
 
 SOURCE=$(shell find my_math -follow -name "*.c")
 
+.PHONY: all clean
+
 all: $(OBJ)
 	mkdir -p $(ODIR)
 	@echo "lol"
